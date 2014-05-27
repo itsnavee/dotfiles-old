@@ -1,0 +1,18 @@
+### Synergy
+
+# Server Configuration
+1- Install synergy on desktop and you should have synergyc and synergys available in /usr/bin
+/usr/bin/synergy
+/usr/bin/synergys
+/usr/bin/synergyc
+
+2- Place the synergy.conf file in your home dir on your desk, preferably make it a dotfile
+3- Start synergy server at desk with following command
+
+synergys -f -c .synergy.conf
+
+-f : to make it verbose and print logs
+-c : config file
+
+# Client Configuration
+intsll quick synergy on client and start by using server ip address
