@@ -1,0 +1,32 @@
+# Do not show startup message
+startup_message off
+defscrollback 10000
+#term screen-256color
+terminfo rxvt-unicode 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+#vbell off
+#vbell_msg  " *beep* "
+
+# Tab bar
+hardstatus off
+hardstatus alwayslastline
+#hardstatus string "%{+b wk} %-w%{+b wk} %n %t %{-}%+w %41=%H @ %l %-= %= %D,%c:%s "
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+#hardstatus string '%{= kG}%-Lw%{= kW}%50> %n*%f %t%{= kG}%+Lw%< %{= kG}%-=%D %m/%d/%y | %C:%s %A | %1`%{-}'
+
+# Escape key
+#escape \\a
+
+# To clear the screen after closing some programs
+altscreen on
+
+# Programs opening by default
+screen -t "bash" 0
+select 0
+
+# Keys
+#bindkey -k k; quit
+bindkey -k k2 next
+bindkey -k k3 prev
+#bindkey -k k8 hardstatus alwayslastline
+#bindkey -k k9 hardstatus alwaysignore
+
